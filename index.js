@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname,"public")));
  
 const API_KEY = process.env.API_KEY;
 const port= 8080;
-app.get("/elara", (req, res) => {
+app.get("/", (req, res) => {
     res.render("index", {
         title: "Elara - Welcome to AI World",
         apiKey: API_KEY,
