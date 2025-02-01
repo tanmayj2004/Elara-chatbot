@@ -7,7 +7,8 @@ const deleteChats = document.querySelector("#delete-chat-button")
 let usereMessage = null;
 let isResponseGenerate= false;
 
-const API_URL = `https:generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+
 
 const loadLocalStorage = () => {
     const savedChats = localStorage.getItem("savedChats");
