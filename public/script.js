@@ -14,7 +14,7 @@ const loadLocalStorage = () => {
     const savedChats = localStorage.getItem("savedChats");
     const isLightMode = (localStorage.getItem("themecolor") === "light_mode");
 
-    document.bgitody.classList.toggle("light_mode", isLightMode);
+    document.body.classList.toggle("light_mode", isLightMode);
     toggleTheme.innerText = isLightMode ? "dark_mode" : "light_mode";
     chatList.innerHTML = savedChats || " ";
 
